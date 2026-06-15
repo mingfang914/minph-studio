@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070707" />
+  <meta name="description"
+    content="Minh Phuong is a creative developer shaping expressive digital systems through code, design and motion." />
+  <title>Minh Phuong — Digital Specimen Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Unbounded:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-grid">
+      <i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="loader-meta mono">
+      <span>MP_OS / VISUAL ENGINE</span>
+      <span class="loader-count">000</span>
+    </div>
+    <div class="loader-title"><span data-i18n="initializing">INITIALIZING</span></div>
+  </div>
+
+  <div class="transition-grid" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="#hero" aria-label="Home">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="29"></circle>
+        <path d="M17 42V21l15 13 15-13v21"></path>
+      </svg>
+      <span>MINH<br />PHUONG</span>
+    </a>
+    <div class="nav-center mono">
+      <span class="live-dot"></span>
+      <span data-i18n="available">AVAILABLE / 2026</span>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch mono">
+        <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+        <span>/</span>
+        <button class="lang-btn" type="button" data-lang="vi">VI</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span>MENU</span><i></i>
+      </button>
+    </div>
+  </nav>
+
+  <aside class="menu-overlay" aria-hidden="true" inert>
+    <canvas id="menu-canvas"></canvas>
+    <div class="menu-top mono">
+      <span data-i18n="commandCenter">COMMAND CENTER</span>
+      <button class="menu-close" type="button" aria-label="Close navigation" data-i18n="close">CLOSE ×</button>
+    </div>
+    <div class="radial-menu">
+      <div class="radial-core"><span>MP</span><small data-i18n="dragSelect">DRAG / SELECT</small></div>
+      <a href="#hero" style="--x:50%;--y:4%"><span>01</span><span data-i18n="nav_index">Index</span></a>
+      <a href="#about" style="--x:91%;--y:35%"><span>02</span><span data-i18n="nav_profile">Profile</span></a>
+      <a href="#work" style="--x:76%;--y:86%"><span>03</span><span data-i18n="nav_work">Work</span></a>
+      <a href="#lab" style="--x:24%;--y:86%"><span>04</span><span data-i18n="nav_lab">Lab</span></a>
+      <a href="#contact" style="--x:9%;--y:35%"><span>05</span><span data-i18n="nav_contact">Contact</span></a>
+    </div>
+    <div class="menu-bottom mono">
+      <a href="mailto:phuongvnmp@gmail.com">PHUONGVNMP@GMAIL.COM</a>
+      <span data-i18n="location">HO CHI MINH CITY / GMT+7</span>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <img class="hero-fallback" src="/art/assets/hero.webp" alt="" fetchpriority="high" />
+      <div class="hero-grid" aria-hidden="true"></div>
+      <img class="hero-owner" src="/art/assets/owner.webp" alt="Portrait of Minh Phuong" fetchpriority="high" />
+      <div class="hero-copy">
+        <div class="hero-label mono">
+          <span data-i18n="specimen">SPECIMEN 01</span>
+          <span data-i18n="creativeDev">CREATIVE DEVELOPER</span>
+        </div>
+        <h1 aria-label="Minh Phuong">
+          <span class="hero-line">MINH</span>
+          <span class="hero-line outline">PHUONG</span>
+        </h1>
+        <p data-i18n="heroDesc">Building digital experiences with the logic of an engineer and the instincts of a visual
+          designer.</p>
+      </div>
+      <div class="hero-footer mono">
+        <span data-i18n="scrollDecode">SCROLL TO DECODE</span>
+        <span>[ CODE · DESIGN · MOTION ]</span>
+        <span>01 / 05</span>
+      </div>
+      <button class="hero-orbit" type="button" aria-label="Explore the archive">
+        <span data-i18n="enterArchive">ENTER<br />ARCHIVE</span>
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="56"></circle>
+        </svg>
+      </button>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-peel">
+        <div class="manifesto-meta mono">
+          <span data-i18n="profileSignal">PROFILE / SIGNAL</span>
+          <span data-i18n="humanMachine">02 — HUMAN + MACHINE</span>
+        </div>
+        <div class="peel-stage">
+          <div class="peel-intro" aria-label="Ideas Design">
+            <div class="peel-word peel-left" data-i18n="ideas">IDEAS</div>
+            <div class="peel-word peel-right" data-i18n="design">DESIGN</div>
+          </div>
+          <div class="peel-image">
+            <div class="peel-layer l1"><img src="/art/assets/workspace.webp" alt="" loading="lazy" /></div>
+            <div class="peel-layer l2"><img src="/art/assets/workspace.webp" alt="" loading="lazy" /></div>
+            <div class="peel-layer l3"><img src="/art/assets/workspace.webp" alt="" loading="lazy" /></div>
+            <div class="peel-layer l4"><img src="/art/assets/workspace.webp"
+                alt="Shadeff.Wave real-time visual effects interface" loading="lazy" /></div>
+            <h2 data-i18n="manifestoHeading">I translate complexity into experiences that feel inevitable.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="profile-dossier">
+        <div class="section-index mono">
+          <span data-i18n="operatingModel">02.1 / OPERATING MODEL</span>
+          <span data-i18n="profileEdition">PROFILE EDITION / 2026</span>
+        </div>
+        <h2 class="profile-statement content-reveal" data-i18n="profileStatement">I WORK WHERE PRODUCT
+          LOGIC,<br />VISUAL IDENTITY AND<br /><em>MOTION MEET.</em></h2>
+        <div class="profile-grid">
+          <article class="content-reveal">
+            <span class="mono">01 / OBSERVE</span>
+            <h3 data-i18n="observeTitle">FIND THE SIGNAL</h3>
+            <p data-i18n="observeDesc">I begin with behavior, constraints and context. The goal is not decoration, but
+              clarity about what the experience must accomplish.</p>
+          </article>
+          <article class="content-reveal">
+            <span class="mono">02 / STRUCTURE</span>
+            <h3 data-i18n="structureTitle">BUILD THE SYSTEM</h3>
+            <p data-i18n="structureDesc">Information, components and motion are designed as one system so the product
+              remains coherent as it grows.</p>
+          </article>
+          <article class="content-reveal">
+            <span class="mono">03 / EXPRESS</span>
+            <h3 data-i18n="expressTitle">MAKE IT FELT</h3>
+            <p data-i18n="expressDesc">Typography, imagery and interaction give the system a distinct voice without
+              compromising speed or usability.</p>
+          </article>
+        </div>
+        <div class="profile-facts">
+          <div><span class="mono" data-i18n="basedIn">BASED IN</span><strong data-i18n="hcmVietnam">HO CHI MINH CITY,
+              VIETNAM</strong></div>
+          <div><span class="mono" data-i18n="primaryFocus">PRIMARY FOCUS</span><strong data-i18n="focusValue">PRODUCT /
+              CREATIVE DEVELOPMENT</strong></div>
+          <div><span class="mono" data-i18n="workingMode">WORKING MODE</span><strong data-i18n="modeValue">INDEPENDENT /
+              COLLABORATIVE</strong></div>
+          <div><span class="mono" data-i18n="coreMedium">CORE MEDIUM</span><strong>WEB / MOTION / SYSTEMS</strong></div>
+        </div>
+        <blockquote class="profile-quote content-reveal" data-i18n="profileQuote">“The best interface does not ask for
+          attention. It directs attention.”</blockquote>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="work-showcase">
+        <div class="work-viewport">
+          <div class="work-slides" aria-live="polite"></div>
+          <div class="work-ui">
+            <div class="work-top mono">
+              <span data-i18n="selectedOps">SELECTED OPERATIONS</span>
+              <span class="work-counter">01 / 04</span>
+            </div>
+            <div class="work-title-mask">
+              <h2 class="work-title">SAFETY</h2>
+            </div>
+            <div class="work-bottom">
+              <div>
+                <span class="mono work-type">ASSESSMENT SAFETY / 2026</span>
+                <p class="work-description">A secure examination platform combining real-time invigilation,
+                  anti-cheat controls, CLO-based exam design and AI-assisted grading.</p>
+              </div>
+              <a class="work-link scramble" href="https://itexam.nvtanh.id.vn" target="_blank" rel="noopener"
+                data-i18n="viewSystem">VIEW SYSTEM ↗</a>
+            </div>
+            <div class="work-progress"><i></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="work-index">
+        <div class="section-index mono">
+          <span data-i18n="projectIndex">03.1 / PROJECT INDEX</span>
+          <span data-i18n="fourSystems">FOUR SYSTEMS / ONE APPROACH</span>
+        </div>
+        <h2 class="index-heading content-reveal" data-i18n="workIndexHeading">BEYOND THE FRAME:<br /><em>THE SYSTEM
+            BEHIND EACH IMAGE.</em></h2>
+        <div class="project-ledger">
+          <article class="project-entry content-reveal">
+            <a href="https://itexam.nvtanh.id.vn" target="_blank" rel="noopener">
+              <div class="project-entry-media"><img src="/art/assets/safety.webp"
+                  alt="ITEXAM secure assessment platform" loading="lazy" /></div>
+              <div class="project-entry-copy"><span class="mono">01 / SAFETY / 2026</span>
+                <h3>ITEXAM</h3>
+                <p data-i18n="itexamNote">Secure online assessment with live supervision, anti-cheat telemetry and
+                  AI-supported authoring and grading.</p>
+                <ul class="project-proof mono">
+                  <li><span>01</span>REAL-TIME INVIGILATION</li>
+                  <li><span>02</span>CLO EXAM MATRIX</li>
+                  <li><span>03</span>AI-ASSISTED GRADING</li>
+                </ul>
+                <ul class="project-tags mono">
+                  <li>ASP.NET CORE</li>
+                  <li>SIGNALR</li>
+                  <li>REDIS</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-entry content-reveal">
+            <a href="https://github.com/mingfang914/ExLMS-SpringBootProject" target="_blank" rel="noopener">
+              <div class="project-entry-media"><img src="/art/assets/multi.webp"
+                  alt="ExLMS collaborative learning dashboard" loading="lazy" /></div>
+              <div class="project-entry-copy"><span class="mono">02 / MULTI / 2026</span>
+                <h3>EXLMS</h3>
+                <p data-i18n="exlmsNote">A collaborative learning ecosystem spanning courses, meetings, shared
+                  documents, assignments and real-time communication.</p>
+                <ul class="project-proof mono">
+                  <li><span>01</span>LIVEKIT CLASSROOMS</li>
+                  <li><span>02</span>YJS CO-EDITING</li>
+                  <li><span>03</span>DOCKERIZED SERVICES</li>
+                </ul>
+                <ul class="project-tags mono">
+                  <li>SPRING BOOT</li>
+                  <li>REACT</li>
+                  <li>WEBSOCKET</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-entry content-reveal">
+            <a href="https://projectmf.id.vn" target="_blank" rel="noopener">
+              <div class="project-entry-media"><img src="/art/assets/effect.webp"
+                  alt="Shadeff.Wave WebGL effects studio" loading="lazy" /></div>
+              <div class="project-entry-copy"><span class="mono">03 / EFFECT / 2026</span>
+                <h3>SHADEFF WAVE</h3>
+                <p data-i18n="shadeffNote">A production-oriented WebGL effects studio built around a custom multi-pass
+                  rendering pipeline.</p>
+                <ul class="project-proof mono">
+                  <li><span>01</span>44 GLSL EFFECTS</li>
+                  <li><span>02</span>MULTI-PASS PIPELINE</li>
+                  <li><span>03</span>PRESET + MEDIA EXPORT</li>
+                </ul>
+                <ul class="project-tags mono">
+                  <li>WEBGL 2</li>
+                  <li>REACT 19</li>
+                  <li>TYPESCRIPT</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-entry content-reveal">
+            <a href="https://github.com/mingfang914/galaxy-tarot" target="_blank" rel="noopener">
+              <div class="project-entry-media"><img src="/art/assets/motion.webp"
+                  alt="Galaxy Tarot celestial observatory" loading="lazy" /></div>
+              <div class="project-entry-copy"><span class="mono">04 / MOTION / 2026</span>
+                <h3>GALAXY TAROT</h3>
+                <p data-i18n="tarotNote">An accessible celestial Tarot experience shaped by orbital navigation, ritual
+                  interaction and procedural sound.</p>
+                <ul class="project-proof mono">
+                  <li><span>01</span>22 MAJOR ARCANA</li>
+                  <li><span>02</span>THREE-CARD RITUAL</li>
+                  <li><span>03</span>WEB AUDIO SOUNDSCAPE</li>
+                </ul>
+                <ul class="project-tags mono">
+                  <li>GSAP</li>
+                  <li>WEB AUDIO</li>
+                  <li>ACCESSIBILITY</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="process-rail">
+          <article><span class="mono">01</span>
+            <h3 data-i18n="discover">DISCOVER</h3>
+            <p data-i18n="discoverDesc">Frame the problem, audience and constraints.</p>
+          </article>
+          <article><span class="mono">02</span>
+            <h3 data-i18n="architect">ARCHITECT</h3>
+            <p data-i18n="architectDesc">Define flows, systems and visual rules.</p>
+          </article>
+          <article><span class="mono">03</span>
+            <h3 data-i18n="prototype">PROTOTYPE</h3>
+            <p data-i18n="prototypeDesc">Test interaction, motion and technical risk.</p>
+          </article>
+          <article><span class="mono">04</span>
+            <h3 data-i18n="ship">SHIP</h3>
+            <p data-i18n="shipDesc">Build, refine and document the final system.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-section" id="lab">
+      <div class="trail-section">
+        <canvas id="trail-canvas" aria-hidden="true"></canvas>
+        <div class="trail-copy">
+          <span class="mono" data-i18n="experimentImage">EXPERIMENT 04 / IMAGE MEMORY</span>
+          <h2 data-i18n="moveFast">MOVE FAST.<br /><em>LEAVE TRACES.</em></h2>
+          <p data-i18n="labDesc">Move your pointer through the field. Every gesture creates a temporary visual memory.
+          </p>
+        </div>
+        <div class="capability-ring" aria-hidden="true">
+          <span>REACT</span><span>THREE.JS</span><span>SPRING</span><span>GSAP</span><span>FIGMA</span><span>DOCKER</span>
+        </div>
+      </div>
+      <div class="lab-log">
+        <div class="section-index mono">
+          <span data-i18n="labLog">04.1 / EXPERIMENT LOG</span>
+          <span data-i18n="ongoingResearch">ONGOING RESEARCH / INTERACTION</span>
+        </div>
+        <h2 class="lab-heading content-reveal" data-i18n="labHeading">THE LAB IS WHERE<br /><em>RULES BECOME
+            MATERIAL.</em></h2>
+        <div class="experiment-grid">
+          <article class="experiment-card experiment-card-wide content-reveal">
+            <div class="experiment-visual"><img src="/art/assets/effect.webp" alt="Shadeff.Wave shader experiment"
+                loading="lazy" /></div>
+            <span class="mono">EXP / 001</span>
+            <h3 data-i18n="expNoise">REACTIVE NOISE FIELD</h3>
+            <p data-i18n="expNoiseDesc">Shader displacement translated into a tactile surface that responds to movement
+              and velocity.</p>
+          </article>
+          <article class="experiment-card content-reveal">
+            <div class="experiment-code" aria-hidden="true">x += velocity<br />memory *= .94<br />signal = noise(x)
+            </div>
+            <span class="mono">EXP / 002</span>
+            <h3 data-i18n="expMemory">IMAGE MEMORY</h3>
+            <p data-i18n="expMemoryDesc">Temporary visual objects accumulate, collide and decay as a record of
+              interaction.</p>
+          </article>
+          <article class="experiment-card content-reveal">
+            <div class="experiment-visual"><img src="/art/assets/motion.webp" alt="Galaxy Tarot motion experiment"
+                loading="lazy" /></div>
+            <span class="mono">EXP / 003</span>
+            <h3 data-i18n="expType">ELASTIC TYPE</h3>
+            <p data-i18n="expTypeDesc">Variable scale and distortion turn typography into a responsive interface
+              material.</p>
+          </article>
+          <article class="experiment-card experiment-card-acid content-reveal">
+            <div class="experiment-orbit" aria-hidden="true"><i></i><i></i><span>60 FPS</span></div>
+            <span class="mono">EXP / 004</span>
+            <h3 data-i18n="expPhysics">PHYSICS AS FEEDBACK</h3>
+            <p data-i18n="expPhysicsDesc">Spring, inertia and collision communicate weight, hierarchy and consequence.
+            </p>
+          </article>
+        </div>
+        <div class="lab-principles">
+          <span class="mono" data-i18n="labPrinciples">LAB PRINCIPLES</span>
+          <p data-i18n="labPrincipleCopy">Prototype the uncertain. Measure the expensive. Keep only the motion that
+            improves meaning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive" id="archive">
+      <div class="archive-head mono">
+        <span data-i18n="capabilityArchive">CAPABILITY ARCHIVE</span>
+        <span data-i18n="toolsThinking">TOOLS ARE TEMPORARY / THINKING IS PERMANENT</span>
+      </div>
+      <div class="archive-list">
+        <article data-image="/art/assets/safety.webp"><span class="mono">01</span>
+          <h3 data-i18n="cap1_title">PRODUCT<br />ENGINEERING</h3>
+          <p data-i18n="cap1_desc">Systems that scale without losing their human edge.</p>
+        </article>
+        <article data-image="/art/assets/motion.webp"><span class="mono">02</span>
+          <h3 data-i18n="cap2_title">INTERACTION<br />DIRECTION</h3>
+          <p data-i18n="cap2_desc">Motion as feedback, narrative and spatial logic.</p>
+        </article>
+        <article data-image="/art/assets/multi.webp"><span class="mono">03</span>
+          <h3 data-i18n="cap3_title">VISUAL<br />SYSTEMS</h3>
+          <p data-i18n="cap3_desc">Distinct identities built from rigorous design rules.</p>
+        </article>
+        <article data-image="/art/assets/effect.webp"><span class="mono">04</span>
+          <h3 data-i18n="cap4_title">CREATIVE<br />FRONTEND</h3>
+          <p data-i18n="cap4_desc">Production-ready interfaces with expressive motion and disciplined performance.</p>
+        </article>
+        <article data-image="/art/assets/motion.webp"><span class="mono">05</span>
+          <h3 data-i18n="cap5_title">RAPID<br />PROTOTYPING</h3>
+          <p data-i18n="cap5_desc">Fast interactive models used to answer difficult product and technical questions.</p>
+        </article>
+        <article data-image="/art/assets/multi.webp"><span class="mono">06</span>
+          <h3 data-i18n="cap6_title">DELIVERY<br />SYSTEMS</h3>
+          <p data-i18n="cap6_desc">Reusable components, documentation and workflows that help teams ship consistently.
+          </p>
+        </article>
+      </div>
+      <div class="archive-preview" aria-hidden="true"><img src="/art/assets/safety.webp" alt="" loading="lazy" /></div>
+      <div class="capability-matrix">
+        <div class="section-index mono"><span data-i18n="workingStack">05.1 / WORKING STACK</span><span
+            data-i18n="selectedTools">SELECTED TOOLS / ADAPTABLE METHODS</span></div>
+        <div class="matrix-grid">
+          <article><span class="mono">DESIGN</span>
+            <p>Figma / Design systems / Prototyping / Art direction / Accessibility</p>
+          </article>
+          <article><span class="mono">BUILD</span>
+            <p>ASP.NET Core / Spring Boot / React / TypeScript / WebGL 2 / REST APIs</p>
+          </article>
+          <article><span class="mono">MOTION</span>
+            <p>GSAP / ScrollTrigger / GLSL / Web Audio / Canvas / Physics</p>
+          </article>
+          <article><span class="mono">DELIVER</span>
+            <p>Docker / Redis / SQL Server / MySQL / MinIO / Vite</p>
+          </article>
+        </div>
+        <p class="matrix-note content-reveal" data-i18n="toolsNote">Tools change with the problem. The constant is a
+          process that connects intent, interaction and implementation.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <canvas id="contact-canvas" aria-hidden="true"></canvas>
+      <div class="contact-meta mono">
+        <span data-i18n="openChannel">OPEN CHANNEL / 05</span>
+        <span data-i18n="vietnam">HO CHI MINH CITY — VIETNAM</span>
+      </div>
+      <h2><span data-i18n="letsCreate">LET'S CREATE</span><span class="contact-serif" data-i18n="theUnexpected">the
+          unexpected.</span></h2>
+      <div class="contact-brief">
+        <div class="contact-intro content-reveal">
+          <span class="mono" data-i18n="nextBrief">NEXT / BRIEF</span>
+          <p data-i18n="contactIntro">Available for selected digital products, portfolio experiences and creative
+            technology collaborations.</p>
+        </div>
+        <div class="contact-columns">
+          <article><span class="mono" data-i18n="goodFit">GOOD FIT</span>
+            <p data-i18n="goodFitValue">Product websites<br />Interactive portfolios<br />Design systems<br />Creative
+              frontend</p>
+          </article>
+          <article><span class="mono" data-i18n="collabMode">COLLABORATION</span>
+            <p data-i18n="collabValue">Independent projects<br />Embedded product teams<br />Agency
+              partnerships<br />Remote / Hybrid</p>
+          </article>
+          <article><span class="mono" data-i18n="responseTime">RESPONSE</span>
+            <p data-i18n="responseValue">Usually within<br />one to two<br />working days.</p>
+          </article>
+        </div>
+      </div>
+      <div class="contact-bottom">
+        <a class="contact-email scramble" href="mailto:phuongvnmp@gmail.com">PHUONGVNMP@GMAIL.COM ↗</a>
+        <div class="contact-links mono">
+          <a href="https://github.com/mingfang914" target="_blank" rel="noopener">GITHUB ↗</a>
+          <a href="https://www.linkedin.com/in/mingfang914" target="_blank" rel="noopener">LINKEDIN ↗</a>
+        </div>
+      </div>
+      <div class="contact-footer mono"><span>MINH PHUONG / PORTFOLIO 2026</span><a href="#hero" data-i18n="backTop">BACK
+          TO TOP ↑</a></div>
+    </section>
+  </main>
+
+  <div id="chapter-transition-overlay" class="chapter-transition-overlay" aria-hidden="true">
+    <div class="chapter-transition-shutters" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="chapter-transition-content">
+      <span class="chapter-transition-label mono" id="transition-label">02 / PROFILE</span>
+      <h2 class="chapter-transition-title" id="transition-title">HUMAN + MACHINE</h2>
+      <p class="chapter-transition-desc" id="transition-desc">I translate complexity into experiences that feel
+        inevitable.</p>
+      <div class="chapter-transition-progress mono">
+        <span class="chapter-transition-current" id="transition-current">02</span>
+        <span class="chapter-transition-divider">/</span>
+        <span class="chapter-transition-total">06</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+</body>
+
+</html>

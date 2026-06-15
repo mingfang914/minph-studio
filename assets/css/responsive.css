@@ -1,0 +1,134 @@
+@media (max-width: 1000px) {
+  :root { --nav-h: 72px; }
+
+  .navbar { grid-template-columns: 1fr auto; }
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+
+  .mobile-menu {
+    position: fixed;
+    inset: var(--nav-h) 0 auto;
+    display: block;
+    padding: 1rem var(--gutter) 2rem;
+    background: var(--ink);
+    border-bottom: 1px solid var(--line);
+    opacity: 0;
+    transform: translateY(-110%);
+    pointer-events: none;
+    transition: opacity var(--base), transform var(--base);
+  }
+  .mobile-menu.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .mobile-menu .nav-link {
+    min-height: 56px;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    font-family: var(--display);
+    font-size: clamp(1.4rem, 5vw, 2.5rem);
+  }
+
+  .hero-section { min-height: max(850px, 100svh); }
+  .hero-title { margin-top: clamp(5rem, 14vh, 9rem); }
+  .hero-bottom { grid-template-columns: 1fr auto; }
+  .hero-role { display: none; }
+
+  .about-layout,
+  .skills-section,
+  .contact-layout { grid-template-columns: 1fr; }
+  .about-details { max-width: 620px; margin-left: auto; }
+  .skills-intro { position: static; }
+  .skills-content { padding-top: 0; }
+  .timeline-content { grid-template-columns: 1fr; }
+  .timeline-meta { grid-row: auto; }
+  .timeline-desc { grid-column: auto; }
+}
+
+@media (max-width: 700px) {
+  :root { --gutter: 1rem; }
+
+  .logo-copy,
+  .hero-location,
+  .hero-index { display: none; }
+  .hero-section { min-height: max(720px, 100svh); padding-top: calc(var(--nav-h) + 1.5rem); }
+  .hero-title {
+    margin-top: clamp(5rem, 18vh, 8rem);
+    font-size: clamp(3.3rem, 18vw, 7rem);
+    line-height: 0.82;
+  }
+  .title-middle { flex-wrap: wrap; }
+  .hero-portrait {
+    flex-basis: 0.9em;
+    width: 0.9em;
+    height: 0.75em;
+  }
+  .title-line-two { margin-left: 0.05em; }
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+  .hero-bio { max-width: calc(100% - 90px); }
+  .round-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 72px;
+    height: 72px;
+    min-height: 72px;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .round-link span { display: none; }
+
+  .section { padding-block: 6rem; }
+  .section-index { top: 6.3rem; }
+  .section-heading h2,
+  .skills-intro h2 { font-size: clamp(2.6rem, 14vw, 5rem); }
+  .about-layout { margin-top: 3rem; }
+  .about-lead p { font-size: clamp(1.6rem, 7.5vw, 2.5rem); }
+  .about-details { margin: 0; }
+  .about-stats { gap: 0.4rem; }
+  .about-image { height: 420px; margin-top: 2rem; }
+
+  .project-heading p { margin-left: 0; }
+  .project-filters { overflow-x: auto; padding-bottom: 0.5rem; }
+  .filter-btn { flex: 0 0 auto; }
+  .projects-grid { display: flex; flex-direction: column; gap: 4rem; }
+  .project-card,
+  .project-card:nth-child(3n + 2),
+  .project-card:nth-child(3n + 3) { margin-top: 0; }
+  .project-body { grid-template-columns: 1fr auto; }
+  .project-desc { grid-column: 1 / -1; }
+
+  .skill-card { grid-template-columns: 44px 1fr; }
+  .skill-level { display: none; }
+  .skill-bar { grid-column: 2; }
+
+  .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .contact-title { font-size: clamp(2.8rem, 14vw, 5.5rem); }
+  .contact-top span:last-child { display: none; }
+  .form-group { grid-template-columns: 1fr; gap: 0.5rem; }
+
+  .footer { grid-template-columns: 1fr auto; }
+  .footer span:last-child { display: none; }
+  .back-to-top { display: none; }
+}
+
+@media (max-width: 420px) {
+  .hero-title { font-size: clamp(3rem, 17.5vw, 5rem); }
+  .nav-controls { gap: 0.3rem; }
+  .ctrl-btn, .hamburger { min-width: 42px; height: 42px; }
+  .about-stats span { font-size: 0.52rem; }
+  .project-links { gap: 0.3rem; }
+}
+
+@media (forced-colors: active) {
+  .status-dot,
+  .marquee-section,
+  .submit-btn { border: 2px solid ButtonText; }
+}
+
+@media print {
+  .navbar, .marquee-section, .contact-form, .back-to-top, .noise { display: none !important; }
+  body, .projects-section, .contact-section { background: #fff; color: #000; }
+}
